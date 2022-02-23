@@ -1,0 +1,13 @@
+// ==UserScript==
+// @name         Ecosia Default Search Engine in Opera
+// @version      1.01
+// @description  Sets Ecosia as default search engine by automatically redirecting you
+//               when you search in DuckDuckGo.
+// @author       Hagbard Hednig
+// @match        http*://*duckduckgo.com/*?*q=*
+// @namespace http://tampermonkey.net/
+// ==/UserScript==
+
+(function() {
+    location.href=('https://www.ecosia.org/search?'+window.location.href.substring(window.location.href.indexOf('q='),window.location.href.length));
+})();
