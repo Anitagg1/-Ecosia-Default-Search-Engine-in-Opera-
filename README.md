@@ -1,0 +1,1 @@
+# -Ecosia-Default-Search-Engine-in-Opera-
